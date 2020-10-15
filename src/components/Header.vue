@@ -5,7 +5,7 @@
         <b-row align-h="center" align-v="center">
           <b-col cols="12" md="6" class="text-center text-md-left">
             <router-link to="/">
-              <h4 class="m-0 text-dark">Store Vani</h4>
+              <h4 class="m-0 text-dark">Store<span class="text-primary">Vani</span></h4>
             </router-link>
           </b-col>
           <b-col

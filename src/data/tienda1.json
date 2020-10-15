@@ -1,0 +1,36 @@
+[
+    {
+        "id": 1,
+        "nombre": "Spyci Store",
+        "descripcion": "Tienda de ropa y accesorios para hombre",
+        "userName": "SpyciStore",
+        "direccion": "Calle sin direccion",
+        
+        "productos": [
+            {
+                "id": 1,
+                "nombre": "Papa con Queso",
+                "descripcion": "This naturallead-in to additional content. This content is a little bitlonger.",
+                "img": "https://cdn.pixabay.com/photo/2020/06/23/14/33/french-fries-5332766_960_720.jpg"
+            },
+            {
+                "id": 2,
+                "nombre": "Pizza de peperonio",
+                "descripcion": "This text as a naturallead-in to additional content. This content is a little bitlonger.",
+                "img": "https://cdn.pixabay.com/photo/2018/04/11/03/13/food-3309418_960_720.jpg"
+            },
+            {
+                "id": 3,
+                "nombre": "Lasana",
+                "descripcion": "This is ad-in to additional content. This content is a little bitlonger.",
+                "img": "https://cdn.pixabay.com/photo/2016/12/11/22/41/lasagna-1900529_960_720.jpg"
+            },
+            {
+                "id": 4,
+                "nombre": "Hamburgersa",
+                "descripcion": "This is content. This content is a little bitlonger.",
+                "img": "https://cdn.pixabay.com/photo/2014/02/18/11/09/food-269078_960_720.jpg"
+            }
+        ]
+    }
+]

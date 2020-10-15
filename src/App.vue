@@ -44,4 +44,11 @@ p {
 #nav {
   padding: 30px;
 }
+
+.grays{
+  color: #2c3e509f;
+}
+.greens {
+  color: #329487f8;
+}
 </style>

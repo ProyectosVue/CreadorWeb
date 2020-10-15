@@ -22,8 +22,8 @@
         <b-col cols="12" md="8" class="text-left">
           <h3><b>¿De que se trata esto?</b></h3>
           <p>
-            <span class="text-primary"><b>Store Bani</b></span
-            >, es una aplicacion web para alojar a todos los negocios de esta
+           <b>Store<span class="text-primary">Vani</span></b>
+            , es una aplicacion web para alojar a todos los negocios de esta
             provincia, con el objetivo de impulsar la informacion online y
             ventas de negocios.
           </p>
