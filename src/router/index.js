@@ -20,7 +20,12 @@ const routes = [
     path: '/perfil',
     name: 'perfil',
     component: Perfil
-  }
+  },
+  {
+    path: '/categorias',
+    name: 'categorias',
+    component: () => import('@/views/Categorias/Categorias.vue')
+  },
 ]
 
 const router = new VueRouter({

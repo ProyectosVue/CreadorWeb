@@ -14,7 +14,7 @@
             class="pt-3 pt-md-0 text-center text-md-right"
           >
             <router-link to="/" class="mx-3">Inicio</router-link>
-            <router-link to="/Negocios" class="mx-3">Info</router-link>
+            <router-link to="/Categorias" class="mx-3">Categorias</router-link>
             <router-link to="/perfil" class="mx-3">Perfil</router-link>
             <b-button size="sm" variant="primary" class="text-white">
               <router-link to="/about" class="text-white">
