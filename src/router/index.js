@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
 import Perfil from '../views/Perfil.vue'
 
 Vue.use(VueRouter)
@@ -9,12 +8,12 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: () => import('@/views/General/Home.vue')
   },
   {
     path: '/about',
     name: 'About',
-    component: () => import('@/views/About.vue')
+    component: () => import('@/views/General/About.vue')
   },
   {
     path: '/perfil',
@@ -24,8 +23,18 @@ const routes = [
   {
     path: '/categorias',
     name: 'categorias',
-    component: () => import('@/views/Categorias/Categorias.vue')
+    component: () => import('@/views/General/Categorias.vue')
   },
+  {
+    path: '/categoria/:nombre',
+    name: 'categoria',
+    component: () => import('@/components/Categorias/Categoria.vue')
+  },
+  // {
+  //   path: '/categoria',
+  //   name: 'categoria',
+  //   component: () => import('@/components/Categorias/Categoria.vue')
+  // },
 ]
 
 const router = new VueRouter({

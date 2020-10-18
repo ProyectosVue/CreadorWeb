@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <section>
     <router-link :to="link" class="card">
       <div class="card__fondo">
         <img :src="imgSrc" alt="" />
       </div>
       <div class="card__details">{{ titulo }}</div>
     </router-link>
-  </div>
+  </section>
 </template>
 
 <script>
