@@ -15,10 +15,10 @@
           >
             <router-link to="/" class="mx-3">Inicio</router-link>
             <router-link to="/categorias" class="mx-3">Categorias</router-link>
-            <router-link to="/perfil" class="mx-3">Perfil</router-link>
+            <!-- <router-link to="/perfil" class="mx-3">Perfil</router-link> -->
             <b-button size="sm" variant="primary" class="text-white">
-              <router-link to="/about" class="text-white">
-                <i class="far fa-user-circle mr-1"></i>Crear perfil
+              <router-link to="/login" class="text-white">
+                <i class="far fa-user-circle mr-1"></i>Registrarte
               </router-link>
             </b-button>
           </b-col>

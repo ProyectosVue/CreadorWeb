@@ -42,18 +42,25 @@
         </b-col>
 
         <template v-for="dato in tienda1">
-          <b-col cols="6" class="my-2"  v-for="dt in dato.productos" :key="dt.id">
+          <b-col
+            cols="6"
+            class="my-2"
+            v-for="dt in dato.productos"
+            :key="dt.id"
+          >
             <b-card>
-              <b-row align-v="center" >
+              <b-row align-v="center">
                 <b-col cols="6">
                   <b-card-img :src="dt.img"></b-card-img>
                 </b-col>
                 <b-col cols="6">
                   <h5>{{ dt.nombre }}</h5>
                   <b-card-text>
-                    {{dt.descripcion}}
+                    {{ dt.descripcion }}
                   </b-card-text>
-                  <b-button class="mt-2" variant="primary" size="sm"  >Pedir ya</b-button>
+                  <b-button class="mt-2" variant="primary" size="sm"
+                    >Pedir ya</b-button
+                  >
                 </b-col>
               </b-row>
             </b-card>
@@ -74,6 +81,12 @@ export default {
     return {
       tienda1: [],
     };
+  },
+  watch: {
+    tienda1() {
+      console.log("cambio...");
+      this.tienda1 = tienda1Json;
+    },
   },
 };
 </script>

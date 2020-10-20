@@ -30,6 +30,7 @@
         </p>
       </b-col>
     </b-row>
+
   </b-container>
 </template>
 <script>
@@ -53,7 +54,8 @@ export default {
           link: "categoria_1",
           imgSrc:
             "https://cdn.pixabay.com/photo/2015/10/12/15/18/store-984393_960_720.jpg",
-          titulo: "Categoria 1",
+          titulo: "Moda y Acesorios",
+          descripcion: 'Lo mas destacado en moda y belleza'
         },
         {
           id: 2,

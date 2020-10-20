@@ -11,6 +11,7 @@
 
 <script>
 export default {
+  name: 'Tarjeta_Categoria',
   props: {
     link: String,
     imgSrc: String,
