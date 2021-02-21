@@ -1,58 +1,46 @@
 <template>
-  <section>
-    <router-link :to="link" class="card">
-      <div class="card__fondo">
-        <img :src="imgSrc" alt="" />
-      </div>
-      <div class="card__details">{{ titulo }}</div>
-    </router-link>
-  </section>
+  <router-link :to="link" @click="clickCategoria">
+    <b-row class="cardMio my-3 mx-auto " align-h="center" align-v="center" @click="clickCategoria">
+      <b-col cols="12" class="text-center center p-3">
+        <i :class="icono" class="text-primary"></i>
+        <p class="text-primary">
+          {{ titulo }}
+        </p>
+      </b-col>
+    </b-row>
+  </router-link>
 </template>
 
 <script>
 export default {
-  name: 'Tarjeta_Categoria',
+  name: "Tarjeta_Categoria",
   props: {
     link: String,
-    imgSrc: String,
+    icono: String,
     titulo: String,
   },
+  methods:{
+    clickCategoria() {
+      // alert('hola click categoria')
+    }
+  }
 };
 </script>
 
 <style lang="scss">
-.card {
-  width: 20em;
-  height: 12vh;
-  position: relative;
-  overflow: hidden;
-  border-radius: 4px;
-  margin: 1em auto;
-  border: 0;
-
-  &__fondo {
-    width: 100%;
-    height: inherit;
-    position: absolute;
-    top: 0;
-    left: 0;
-    img {
-      width: inherit;
-      height: inherit;
-      height: inherit !important;
-      object-fit: cover;
+.cardMio {
+  p {
+    font-size: 1em;
+    &:hover {
+      text-decoration: line;
     }
   }
-  &__details {
-    width: inherit;
-    height: inherit !important;
-    background: rgba(0, 0, 0, 0.384);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-    color: white;
-    
- }
+  i {
+    font-size: 2em;
+  }
+  .center {
+    background: rgba(1, 0, 7, 0.048);
+    border-radius: 5px;
+  }
 }
 </style>

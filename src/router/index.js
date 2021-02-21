@@ -1,8 +1,4 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-// import Perfil from '../views/Perfil.vue'
-
-Vue.use(VueRouter)
+import { createRouter, createWebHashHistory } from 'vue-router';
 
 const routes = [
   
@@ -40,11 +36,12 @@ const routes = [
   {
     path: '/categoria/:nombre',
     name: 'categoria',
-    component: () => import('@/components/Categorias/Categoria.vue')
+    component: () => import('@/views/General/categoria-detalle.vue')
   },
 ]
 
-const router = new VueRouter({
+const router = createRouter({
+  history: createWebHashHistory(),
   routes
 })
 

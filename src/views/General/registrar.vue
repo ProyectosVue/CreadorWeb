@@ -8,41 +8,53 @@
 
         <b-col sm="12" md="4">
           <b-row>
+            <h2 class="text-center"><b>Store<span class="text-primary">Vani</span></b></h2>
             <b-col cols="12" class="text-left my-2">
               <h4>
                 Registrarte en
-                <b>Store<span class="text-primary">Vani</span></b>
               </h4>
             </b-col>
             <b-col cols="12" class="my-2">
               <label for="" class="m-0"><b>Nombre:</b></label>
-              <b-form-input type="text" placeholder="tu nombre"></b-form-input>
+              <el-input placeholder=""></el-input>
             </b-col>
             <b-col cols="12" class="my-2">
               <label for="" class="m-0"><b>Correo:</b></label>
-              <b-form-input
-                type="text"
-                placeholder="negocio@email.com"
-              ></b-form-input>
+              <el-input
+                type="email"
+                placeholder="introduce tu gmail"
+              ></el-input>
             </b-col>
             <b-col cols="12" class="my-2">
               <label for="" class="m-0"><b>Telefono/Celular:</b></label>
-              <b-form-input
-                type="text"
-                placeholder="809-your-number"
-              ></b-form-input>
+              <el-input></el-input>
             </b-col>
             <b-col cols="12" class="my-2">
-              <label for="" class="m-0"><b>Usuario:</b></label>
-              <b-form-input type="text" placeholder="@admin"></b-form-input>
+              <label for="" class="m-0"><b>Nombre de usuario:</b></label>
+              <el-input type="text"></el-input>
             </b-col>
             <b-col cols="12" class="my-2">
               <label for="" class="m-0"><b>Contraseña:</b></label>
-              <b-form-input type="password" placeholder="******">
-              </b-form-input>
+              <el-input
+                placeholder="Please input password"
+                v-model="password"
+                show-password
+              ></el-input>
+            </b-col>
+            <b-col cols="12">
+              <el-alert
+                title="error alert"
+                type="error"
+                description="more text description"
+                show-icon
+                v-if="alert"
+              >
+              </el-alert>
             </b-col>
             <b-col cols="12" class="my-2">
-              <b-button variant="primary" block> Registrarte </b-button>
+              <b-button variant="primary" block @click="open4">
+                Registrarte
+              </b-button>
             </b-col>
           </b-row>
         </b-col>
@@ -53,6 +65,20 @@
 <script>
 export default {
   name: "Registrar",
+  data() {
+    return {
+      password: "",
+    };
+  },
+  methods: {
+    open4() {
+     this.$message({
+       showClose: true,
+       message: "Oops, this is a error message.",
+       type: "error",
+     });
+    },
+  },
 };
 </script>
 <style lang="scss" scoped >

@@ -6,24 +6,20 @@
           <b-col cols="12" md="6" class="text-left pb-4 pb-md-0">
             <h1>
               <b>
-                Servicios <span class="text-primary">online</span> para tu
+                Servicios <span class="" style="color:#409EFF;">online</span> para tu
                 negocio y/o emprendimiento.
               </b>
             </h1>
             <p>
-              StoreVani es una aplicacion web para alojar a todos los negocios de esta
-              provincia, con el objetivo de impulsar la informacion online y
-              ventas de negocios.
+              StoreVani es una aplicacion web para alojar a todos los negocios
+              de esta provincia, con el objetivo de impulsar la informacion
+              online y ventas de negocios.
             </p>
-            <b-button
-              to="/about"
-              variant="primary"
-              size="lg"
-              class="mt-2 w-50 text-white"
-              style="font-size: 16px"
+            <router-link to="/about"
+              ><el-button type="primary" class="mt-2 d-block w-50">
+                Ver mas
+              </el-button></router-link
             >
-              <b>Comenzar</b>
-            </b-button>
           </b-col>
           <b-col cols="12" md="6" class="pt-4 pt-md-0 text-center">
             <img src="@/assets/real.svg" id="img" alt="" />
@@ -34,9 +30,10 @@
             <h3><b>¿De que se trata esto?</b></h3>
             <p>
               En<b>Store<span class="text-primary">Vani</span></b>
-              estamos dispuesto ayudar a los comercios de nuestra region, por ende
-              les ofrecemos presencia online profecional y a la vez que puedan generar
-              ingresos sin la necesidad de invertir una millonada.
+              estamos dispuesto ayudar a los comercios de nuestra region, por
+              ende les ofrecemos presencia online profecional y a la vez que
+              puedan generar ingresos sin la necesidad de invertir una
+              millonada.
             </p>
           </b-col>
           <b-col cols="12" class="my-4">

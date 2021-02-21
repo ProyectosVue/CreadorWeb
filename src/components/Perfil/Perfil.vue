@@ -2,7 +2,7 @@
   <div class="perfil">
     <b-container>
       <b-row align-h="center" align-v="center">
-        <b-col cols="auto" class="p-4 fondo">
+        <b-col cols="auto" class="p-2 fondo">
           <div class="perfil__foto" title="Foto de perfil">
             <img
               src="https://es.gravatar.com/userimage/169130396/1f98c32e08eac62c1cc2a233e587fdd4.jpg?size=200"
@@ -14,7 +14,7 @@
         <template v-for="dato in tienda1">
           <b-col cols="12" :key="dato.id">
             <div class="perfil__info">
-              <b-row class="pt-2 pl-2" align-v="center" align-h="center">
+              <b-row class=" pl-2" align-v="center" align-h="center">
                 <b-col cols="12" class="text-center">
                   <h5>
                     <b class="text-primary"> {{ dato.nombre }} </b>
@@ -43,37 +43,37 @@
 
         <template v-for="dato in tienda1">
           <b-col
-            cols="6"
+            md="6"
             class="my-2"
             v-for="dt in dato.productos"
             :key="dt.id"
           >
-            <b-card>
-              <b-row align-v="center">
-                <b-col cols="6">
-                  <b-card-img :src="dt.img"></b-card-img>
-                </b-col>
-                <b-col cols="6">
-                  <h5>{{ dt.nombre }}</h5>
-                  <b-card-text>
-                    {{ dt.descripcion }}
-                  </b-card-text>
-                  <b-button class="mt-2" variant="primary" size="sm"
-                    >Pedir ya</b-button
-                  >
-                </b-col>
-              </b-row>
-            </b-card>
+          <ItemProducto :datos="{dt}" />
           </b-col>
         </template>
+        <b-col cols="12" class="text-center mt-4">
+          <b-button size="sm" variant="primary" class="px-3"><i class="fas fa-plus mr-2"></i>Agregar Producto</b-button>
+        </b-col>
       </b-row>
+
+
     </b-container>
   </div>
 </template>
 <script>
 import tienda1Json from "@/data/tienda1.json";
+import ItemProducto from './ItemProducto.vue';
+
+/** DOCUMENTACION DE ESTE COMPONENTE
+ *  * Este componente sera el que vera el usuario dueño y el usuario comprador
+ * * El dueño del usuario podra agregar productos y editar el perfil
+ *  ! El boton de ageregar producto se ocultara cuando el usuario sera el dueño
+ */
 
 export default {
+  components: {
+    ItemProducto
+  },
   mounted() {
     this.tienda1 = tienda1Json;
   },
